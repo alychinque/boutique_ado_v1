@@ -37,10 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+=======
+>>>>>>> 59f1cdd138a474b95a6a51bac4589d6665bede76
 ]
 
 MIDDLEWARE = [
@@ -63,7 +66,11 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
+<<<<<<< HEAD
                 'django.template.context_processors.request', #required by allauth
+=======
+                'django.template.context_processors.request',
+>>>>>>> 59f1cdd138a474b95a6a51bac4589d6665bede76
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -71,6 +78,7 @@ TEMPLATES = [
     },
 ]
 
+<<<<<<< HEAD
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -91,6 +99,8 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+=======
+>>>>>>> 59f1cdd138a474b95a6a51bac4589d6665bede76
 WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 
 
