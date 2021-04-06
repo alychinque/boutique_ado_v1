@@ -3,11 +3,7 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-<<<<<<< HEAD
-    <link rel="stylesheet" href="{% static 'checkout\css\checkout.css' %}"> 
-=======
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
->>>>>>> 0fc211e074fe130fadbc64733de8de8e63d00e4b
 {% endblock %}
 
 {% block page_header %}
@@ -141,8 +137,8 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super}}
+    {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"is_client_secret" }}
+    {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
